@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,GAAG;EACF,gBAAgB,ECHA,GAAG;EDInB,KAAK,ECHC,KAAK;EDIX,MAAM,ECHC,KAAK;;ADKb,GAAG;EACF,QAAQ,EAAC,QAAQ;EACjB,GAAG,EAAC,GAAG;EACP,IAAI,EAAC,GAAG;EAER,MAAM,EADE,eAAgB;;AAGzB,CAAC;EETA,SAAS,EALA,IAAI;EAMb,WAAW,EALA,IAAI;EAMf,WAAW,EALA,IAAI;EAMf,KAAK,EAAC,IAAI",
+"sources": ["style2.scss","_background.scss","_fonts.scss"],
+"names": [],
+"file": "style2.css"
+}

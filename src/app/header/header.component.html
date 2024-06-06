@@ -1,0 +1,27 @@
+<header>
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <a href="index.html">
+                    BRUNCH
+                </a>
+            </div>
+            <nav [class.active]="submitBars">
+                <ul>
+                    <li><a href="index.html">WELCOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#events">EVENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  
+                </ul>
+
+            </nav>
+            <i id="bars"  (click)="submitBars = !submitBars" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="head2">
+            <h2>Brunch</h2>
+            <h1>full WEBSITE</h1>
+            <a href="#">READ MORE</a>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,31 @@
+@import "_reset";
+@import "_colors";
+@import "_dimension";
+@import "_border";
+@import "_btn";
+@import "_p";
+
+
+@mixin important{
+	margin-left:100px;
+	margin-top:100px;
+
+}
+div{
+	width:$width;
+	height:$height;
+	background-color:$backgroundColor;
+
+	@include border($width:10px,$style:solid,$color:violet);
+	@include important;
+	
+}
+button{
+	@include btn;
+}
+p{
+	@include para;
+}
+.two{
+	@include two;
+}

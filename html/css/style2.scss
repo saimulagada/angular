@@ -1,0 +1,17 @@
+@import "_background";
+@import "_fonts";
+div{
+	background-color:$backgroundColor;
+	width:$width;
+	height:$height;
+}
+div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	$border:2px solid black !global;
+	border:$border;
+}
+p{
+	@include two
+}

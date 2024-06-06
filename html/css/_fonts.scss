@@ -1,0 +1,13 @@
+$fontSize:25px;
+$fontWeight:bold;
+$lineHeight:30px;
+
+@mixin two{
+	font-size:$fontSize;
+	font-weight:$fontWeight;
+	line-height:$lineHeight;
+	color:blue;
+}
+p{
+	border:2px solid $color;
+}

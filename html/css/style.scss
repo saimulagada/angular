@@ -1,0 +1,154 @@
+@import "btn";
+*{
+	margin:0;
+	padding:0;
+
+	box-sizing:border-box;
+}
+@mixin one{
+    text-decoration:none;
+	color:skyblue;
+	font-weight:bold;
+	text-shadow:2px 2px 4px blue;
+	}
+	@mixin two{
+	border:2px solid orangered;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+     transform: rotate(318deg);
+     transition:0.5s;
+
+	}
+body{
+	background:url(../images/pexels-berend-de-kort-1452701.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:20px;
+}
+.container{
+	width:980px;
+	margin:0 auto;
+}
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:20px 0;
+}
+.logo a{
+	
+	font-size:30px;
+	@include one;
+	
+}
+nav ul{
+    list-style-type:none;
+    li{
+    display:inline-block;
+    margin-right:10px;
+    a{
+    
+    font-size:25px;
+    @include one;
+    &:hover{
+    color:red;
+    }
+    }
+    }
+	
+}
+main{
+	position:absolute;
+	top:30%;
+	width:500px;
+	display:flex;
+	justify-content:space-between;
+
+	h1{
+	  font-size:35px;
+	  letter-spacing:1px;
+	  font-weight:bold;
+	  color:skyblue;
+	  text-shadow:4px 4px 6px blue;
+	  span{
+	    font-size:50px;
+	    color:orange;
+
+	  }
+
+	}
+	p{
+	   color:#ccc;
+	   padding:10px 0 30px 0;
+	   font-weight:bold;
+	   font-size:15px;
+	   line-height:20px;
+	   text-shadow:4px 4px 6px blue;
+	}
+	a{
+	  text-decoration:none;
+	  background:transparent;
+	  border:2px solid orange;
+	  border-radius:5px;
+	  padding:10px 20px;
+	  font-size:20px;
+	  box-shadow:3px 3px 5px gray;
+	  color:orangered;
+	  position:absolute;
+	  transition:0.5s;
+	  &:hover{
+	  transform:translateX(10px);
+	  background-color:orangered;
+	  color:#fff;
+
+	  }
+	}
+	.main_content2{
+	  @include two;  
+    
+    left: 618px;
+    top: 3px;
+   
+	 &:hover{
+	 transform:translateX(20px);
+	 }
+   
+	   
+	}
+	.main_content3{
+	@include two;
+	 left:726px;
+	 top:3px;
+	 
+	 &:hover{
+	 transform:translateX(10px);
+	 }
+	 
+	}
+	.main_content4{
+	@include two;
+	transform: rotate(137deg);
+    left: 726px;
+    top: 170px;
+    &:hover{
+	 transform:translateX(20px);
+	 }
+	 
+	}
+	.main_content5{
+	@include two;
+	transform: rotate(318deg);
+    left: 618px;
+    top: 170px;
+    &:hover{
+	 transform:translateX(10px);
+	 }
+	 
+	}
+
+}
+button{
+	
+}
+
